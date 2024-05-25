@@ -20,11 +20,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-    - name: Set up Python #安装python
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
-    - name: Install requirements #安装轮子
+    - name: Install requirements
       run: |
         pip install -r requirements.txt
     - name: Run script
